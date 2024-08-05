@@ -12,10 +12,10 @@ const HeroSection = () => {
       <p>The Time Is Now!</p>
       <div className="hero-btns">
         <Button className="btns" buttonStyle="btn--outline" buttonSize="btn--large">
-          Start Now
+          START NOW
         </Button>
         <Button className="btns" buttonStyle="btn--primary" buttonSize="btn--large">
-          Start Now <FontAwesomeIcon icon={['fas', 'play-circle']} />
+          WATCH TRAILER <FontAwesomeIcon icon={['fas', 'play-circle']} />
         </Button>
       </div>
     </div>
