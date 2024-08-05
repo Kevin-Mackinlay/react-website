@@ -1,5 +1,5 @@
 import './navbar.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
@@ -21,14 +21,18 @@ function Navbar() {
         }
     };
 
+    useEffect(() => {
+      showButton();
+    }, []);
+
     window.addEventListener('resize', showButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            ReAct <FontAwesomeIcon icon={faReact} />
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            ReAct  <FontAwesomeIcon icon={faReact} />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <FontAwesomeIcon icon={click ? faTimes : faBars} />

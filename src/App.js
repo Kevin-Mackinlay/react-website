@@ -1,6 +1,8 @@
+
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Home from './home/Home';
+import Home from './components/home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons'; // Import all solid icons
@@ -15,8 +17,8 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" exact  />
+        <Routes> 
+          <Route path='/' exact element= {<Home/>} />
         </Routes>
       </Router>
     </>
