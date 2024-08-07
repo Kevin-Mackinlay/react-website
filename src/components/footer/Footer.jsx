@@ -3,7 +3,7 @@ import { Button } from '../buttons/Button';
 import './footer.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faPinterest, faReact, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
             <Link to="/">Investors</Link>
             <Link to="/">Terms of Service</Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/">Contact</Link>
             <Link to="/">Support</Link>
@@ -38,14 +38,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Videos</h2>
             <Link to="/">Submit Video</Link>
             <Link to="/">Ambassadors</Link>
             <Link to="/">Agency</Link>
             <Link to="/">Influencer</Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Social Media</h2>
             <Link to="/">Instagram</Link>
             <Link to="/">Facebook</Link>
@@ -65,13 +65,19 @@ const Footer = () => {
           <small className="website-rights">ReAct © 2024</small>
           <div className="social-icons">
             <Link className="social-icon-link facebook" to="/" target="_blank" arial-label="Facebook">
-              <FontAwesomeIcon icon="fa-brands fa-facebook" />{' '}
+              <FontAwesomeIcon icon={faFacebook} />{' '}
             </Link>
             <Link className="social-icon-link instagram" to="/" target="_blank" arial-label="Instagram">
-              <FontAwesomeIcon icon="fa-brands fa-instagram" />{' '}
+              <FontAwesomeIcon icon={faInstagram} />{' '}
             </Link>
             <Link className="social-icon-link pinterest" to="/" target="_blank" arial-label="Pinterest">
-              <FontAwesomeIcon icon="fa-brands fa-pinterest" />{' '}
+              <FontAwesomeIcon icon={faPinterest} />{' '}
+            </Link>
+            <Link className="social-icon-link twitter" to="/" target="_blank" arial-label="Twitter">
+              <FontAwesomeIcon icon={faTwitter} />{' '}
+            </Link>
+            <Link className="social-icon-link linkedin" to="/" target="_blank" arial-label="Linkedin">
+              <FontAwesomeIcon icon={faLinkedin} />{' '}
             </Link>
           </div>
         </div>
